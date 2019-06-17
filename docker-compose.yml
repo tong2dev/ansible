@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  ubuntu:
+    build: ./ENV
+    container_name: ubuntu 
+    #working_dir: /usr/src/app/node
+    networks:
+      - essof_ap
+    tty: true
+    
+networks:
+  essof_ap:
